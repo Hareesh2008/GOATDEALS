@@ -1,0 +1,75 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0B0B12;
+  color: #E8E8F0;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B12;
+}
+::-webkit-scrollbar-thumb {
+  background: #F54F1E;
+  border-radius: 3px;
+}
+
+input, button, a, select, textarea {
+  font-family: 'DM Sans', sans-serif;
+}
+
+select option {
+  background: #13131E;
+  color: #E8E8F0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .pgrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+  .mgrid {
+    flex-direction: column !important;
+  }
+  .mgrid .mleft {
+    border-right: none !important;
+    border-bottom: 1px solid #1E1E2E !important;
+  }
+  .hero-h {
+    font-size: 38px !important;
+  }
+  .nav-tagline {
+    display: none !important;
+  }
+  .trust-g {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .formrow {
+    grid-template-columns: 1fr !important;
+  }
+  .stat-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
